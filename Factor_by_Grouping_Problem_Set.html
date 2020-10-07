@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    
+    <meta charset='utf-8'/>
+    <style>
+        div{
+            float: left;
+        }
+
+        #pb_set_heading{
+            position: relative;
+            left: 28%;
+            top: 7px;
+
+        }
+        #problem_set_container{
+           position: relative;
+           border: 1px solid grey;
+           width: 600px;
+           height: 580px;
+           left: 20%;
+           background-color: rgb(245, 245, 245);
+           border-radius: 2px;
+  
+       }
+
+       .problem_box{
+           position: relative;
+           border: 1px solid rgb(88, 88, 88);
+           height: 50px;
+           width: 577px;
+           margin: 10px;
+           background-color: rgb(228, 228, 228);
+           border-radius: 5px;
+       }
+       .problem_number{
+           position: relative;
+           border: 1px solid rgb(88, 88, 88); 
+           height: 23px;
+           width: 25px;
+           top: 5px;
+           left: 5px;
+           margin: 5px;
+           padding-top: 3px;
+           font-size: 17px;
+           border-radius: 7px;
+           background-color: rgb(255, 255, 255);
+           text-align: center;
+
+       }
+       .problem_equation{
+           position: relative;
+           border: 1px solid grey; 
+           height: 25px;
+           width: 130px;
+           top: 7px;
+           left: 10px;
+           margin: 3px;
+           padding-top: 3px;
+           padding-left: 30px;
+           font-size: 15px;
+           border-radius: 3px;
+           background-color: rgb(255, 255, 255);
+           text-align:left;
+
+       }
+       .problem_answer{
+           position: relative;
+           /*border: 1px solid grey;*/
+           left: 35px;
+           top: 3px;
+           height: 40px;
+           width: 150px;
+           margin: 2px;
+
+       }
+       .problem_submit{
+           position: relative;
+           /*border: 1px solid grey;*/
+           height: 30px;
+           width: 100px;
+           left: 72px;
+           top: 8px;
+           margin: 2px;
+           padding: 3px;  
+       }
+
+       .problem_check{
+           position: relative;
+           /*border: 1px solid grey; */
+           top: 10px;
+           left: 70px;
+           height: 30px;
+           width: 30px;
+           margin: 2px;
+       }
+       .check_button{
+           position: relative;
+           height: 25px;
+           width: 80px;
+           top: 0px; 
+           left: 10px;
+           border: 1px solid black;
+           border-radius: 5px;
+       }
+       .check_button:hover{
+           transition-duration: 0.02s;
+           background-color: grey;
+       }
+       .answer_input{
+           position: relative;
+           height: 26px;
+           top: 5px;
+           left: 0px;
+           width: 120px;
+           text-align: center;
+           border: 1px solid grey;
+           background-color: rgb(255, 255, 255);
+           font-size: 14px;
+           border-radius: 3px;
+
+       }
+       .check_box{
+           position: relative;
+           border: 1px solid black;
+           background-color: whitesmoke;
+           /*background-color: rgb(7, 206, 7);*/
+           width: 20px;
+           height: 20px;
+           left: 0px;
+           top: 0px;
+           margin: 2px;
+       }
+
+
+    </style>
+
+    <head>
+
+    </head>
+    
+    <body> 
+        <h2 id="pb_set_heading">Factor By Grouping Problems</h2>
+        
+        <div id="problem_set_container">
+
+            <div id="pb_box_1" class="problem_box">
+
+                <div id="pb_1_num" class="problem_number">
+                    1
+                </div>
+                <div id="pb_1_eq" class="problem_equation">
+
+                </div>
+                <div id="pb_1_ans" class="problem_answer">
+                    <input id="ans_1_input" class="answer_input" value="",type="text">
+                </div>
+                <div id="pb_1_sub" class="problem_submit">
+                    <button id="check_btn_1" class="check_button"
+                    onclick="check_btn('1')">Check</button>
+                </div>
+                <div id="pb_1_check" class="problem_check">
+                    <div id="pb_1_check_box" class="check_box">
+
+                    </div>
+                </div>
+            </div>
+            <div id="pb_box_2" class="problem_box">
+
+                <div id="pb_2_num" class="problem_number">
+                    2
+                </div>
+                <div id="pb_2_eq" class="problem_equation">
+
+                </div>
+                <div id="pb_2_ans" class="problem_answer">
+                    <input id="ans_2_input" class="answer_input" value="",type="text">
+                </div>
+                <div id="pb_2_sub" class="problem_submit">
+                    <button id="check_btn_2" class="check_button"
+                    onclick="check_btn('2')">Check</button>
+                </div>
+                <div id="pb_2_check" class="problem_check">
+                    <div id="pb_2_check_box" class="check_box">
+
+                    </div>
+                </div>
+            </div>
+            <div id="pb_box_3" class="problem_box">
+
+                <div id="pb_3_num" class="problem_number">
+                    3
+                </div>
+                <div id="pb_3_eq" class="problem_equation">
+
+                </div>
+                <div id="pb_3_ans" class="problem_answer">
+                    <input id="ans_3_input" class="answer_input" value="",type="text">
+                </div>
+                <div id="pb_3_sub" class="problem_submit">
+                    <button id="check_btn_3" class="check_button"
+                    onclick="check_btn('3')">Check</button>
+                </div>
+                <div id="pb_3_check" class="problem_check">
+                    <div id="pb_3_check_box" class="check_box">
+
+                    </div>
+                </div>
+            </div>
+            <div id="pb_box_4" class="problem_box">
+
+                <div id="pb_4_num" class="problem_number">
+                    4
+                </div>
+                <div id="pb_4_eq" class="problem_equation">
+
+                </div>
+                <div id="pb_4_ans" class="problem_answer">
+                    <input id="ans_4_input" class="answer_input" value="",type="text">
+                </div>
+                <div id="pb_4_sub" class="problem_submit">
+                    <button id="check_btn_4" class="check_button"
+                    onclick="check_btn('4')">Check</button>
+                </div>
+                <div id="pb_4_check" class="problem_check">
+                    <div id="pb_4_check_box" class="check_box">
+
+                    </div>
+                </div>
+            </div>
+            <div id="pb_box_5" class="problem_box">
+
+                <div id="pb_5_num" class="problem_number">
+                    5
+                </div>
+                <div id="pb_5_eq" class="problem_equation">
+
+                </div>
+                <div id="pb_5_ans" class="problem_answer">
+                    <input id="ans_5_input" class="answer_input" value="",type="text">
+                </div>
+                <div id="pb_5_sub" class="problem_submit">
+                    <button id="check_btn_5" class="check_button"
+                    onclick="check_btn('5')">Check</button>
+                </div>
+                <div id="pb_5_check" class="problem_check">
+                    <div id="pb_5_check_box" class="check_box">
+
+                    </div>
+                </div>
+            </div>
+            <div id="pb_box_6" class="problem_box">
+
+                <div id="pb_6_num" class="problem_number">
+                    6
+                </div>
+                <div id="pb_6_eq" class="problem_equation">
+
+                </div>
+                <div id="pb_6_ans" class="problem_answer">
+                    <input id="ans_6_input" class="answer_input" value="",type="text">
+                </div>
+                <div id="pb_6_sub" class="problem_submit">
+                    <button id="check_btn_6" class="check_button"
+                    onclick="check_btn('6')">Check</button>
+                </div>
+                <div id="pb_6_check" class="problem_check">
+                    <div id="pb_6_check_box" class="check_box">
+
+                    </div>
+                </div>
+            </div>
+            <div id="pb_box_7" class="problem_box">
+
+                <div id="pb_7_num" class="problem_number">
+                    7
+                </div>
+                <div id="pb_7_eq" class="problem_equation">
+
+                </div>
+                <div id="pb_7_ans" class="problem_answer">
+                    <input id="ans_7_input" class="answer_input" value="",type="text">
+                </div>
+                <div id="pb_7_sub" class="problem_submit">
+                    <button id="check_btn_7" class="check_button"
+                    onclick="check_btn('7')">Check</button>
+                </div>
+                <div id="pb_7_check" class="problem_check">
+                    <div id="pb_7_check_box" class="check_box">
+
+                    </div>
+                </div>
+            </div>
+            <div id="pb_box_7" class="problem_box">
+
+                <div id="pb_8_num" class="problem_number">
+                    8
+                </div>
+                <div id="pb_8_eq" class="problem_equation">
+
+                </div>
+                <div id="pb_8_ans" class="problem_answer">
+                    <input id="ans_8_input" class="answer_input" value="",type="text">
+                </div>
+                <div id="pb_8_sub" class="problem_submit">
+                    <button id="check_btn_8" class="check_button"
+                    onclick="check_btn('8')">Check</button>
+                </div>
+                <div id="pb_8_check" class="problem_check">
+                    <div id="pb_8_check_box" class="check_box">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+     
+    </body>
+
+
+
+</html>
+
+
+<script src='Factor_by_Grouping_Problem_Set_Script.js'></script>
